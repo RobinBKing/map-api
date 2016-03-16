@@ -21,7 +21,7 @@ exports.initMap = function () {
   });
 };
 
-exports.callback = function (results, status) {
+var callback = function (results, status) {
   if (status === google.maps.places.PlacesServiceStatus.OK) {
     for (var i = 0; i < results.length; i++) {
       createMarker(results[i]);
@@ -30,7 +30,7 @@ exports.callback = function (results, status) {
   console.log(results);
 };
 
-exports.createMarker = function (place) {
+var createMarker = function (place) {
   var placeLoc = place.geometry.location;
   var marker = new google.maps.Marker({
     map: map,
