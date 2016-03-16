@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "steel-aileron-125215",
+  "private_key_id": "378873fdb48b03453aa0e0afc6142bacad4098fb",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDLTar5V5zraI2X\nYDDa+DHqbddgp2z0YgVZqVWyFsVdMGHNClt9M/jp3j1ykIHGXqmso2kDwiAl+4ZC\nzX9JyTA+Ps6xmgw/ldWW/2/bNZ+gc5CZme1ecAIkNHa38rbZBA96m46FCO+hptTb\nVfh+2Fqz3PVF71xaoZwNL5HN+QYHua183C7OVjgmCNoVDBmfBF6qNKkt+LftgZUa\ne4x9Sxo9Y0S+Nhq3Dd36EYlSRQ3T0WYRhKkJptZ5zD23ItkLRK/IrMcu1JgFgOdh\nUL8/NpM/2PblYAG9YVjVa7t3G4ugBGVokXI+1lvrirthIuCRGYc1vVUaR2OEFjJZ\nwPGDVj0TAgMBAAECggEBAIw7+NGhg5ZGOlTOfySryxKfzc7X7insazBbw8biOiV7\nuBqNKGqGrQ30xIH/9+Rza6qv1UJIZ5CLnSL7SPAGnQZyoHSVhBlgK0LK08drh75P\nuNCbAsb/kBqVLcbY3xN23459OqO9dD4XLABXnt8wMfCbW3xwDU5e55uY0oQ3X9d3\nGyDcA4rR4DLMuEQJESdxY+Mjc3YZVjHhk7aYppa0NNwwE5wLLvRc+KwaY95UXRoO\nQtoXyqjtzMEcwL+Ayj7it39j72sbQflLHnSfo7d04cEDEljP4JwAPVFt+3KH6RE+\ndqrp42/b1+JrfsnlTLdL4Kz3oDnLOz0M77shZVFiAUECgYEA9GA8q7smmkT3i7Ul\n7T+2hkMmEVT2F2hpxloNFenxLSzvN/fDdXz2u0eMmklRHf9/lfM2rS1viOq7UFK4\nzeKfVoRAXekwAalXGJdhTMPWHiMuOjgrKEzE1RRVRHp3KUD5do2F+HL0UhRlBBAp\n837Zd9e9yECxWq4T6kBuTqf9XkMCgYEA1PlKgjWewJbdwXyxgyj1jVqdEejoSAA3\n7iVsOasby2Dz5e0zX4S0vcb3x2D6CI0vXZx4yqUc3rq94APOgYoLHxAOO0WDtp/d\nEI9YhBODvgGayEwy1i2/5pYQg4KtRBz4SoIzehqIx72lFKU5t965p8aDIMrjWc2u\n8OZzoEUlgPECfxMXcaX4+QsUWEKR5GSklZ3noRG5kYBCqADXCC6uGClvWUEGGj8T\nhDMdY96p26x8SXtthNgCtLP9oqSj0cxD6C7aJi0wCpAWqrdBHFji89dm6DWkLbr4\nRGhhLkgrSSPv741TgSPn1y6SaVHn8V8UiejS8gCzDSgIcYXbgsKiXSkCgYEAuFTI\nI2jrbX9mkfgt3/rMhTrfZcfze5YM0qc7Q7KQjPfuQZyK8Wp30SXsAXozDsG8NEag\n2awND84LV1+UFdR4Cbuoxa5F8QPun02ibDZDuWnEIQaqnWvdg2NxCZJKCwET+dE1\nYsKijlbbEcJr8XPptof/qJtSKcD3YHPlsdsHOdECgYEAwVO/iywDL0pbnaovOqH/\n/1EHwBO76a7y8FvQkRxWWIHxjlq9BPiKY0FrBFgUg9XiVKuyP+yp7gG8eTokVtWu\n8pxOr2HkEbdXX5skwGYMCCd9mbe4C6taWXgs7Mz4VY4mkilOQavsRFzVW8BWYpfK\nE1agCbzbEcgSZFYZtnKHnDI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "epicodus@steel-aileron-125215.iam.gserviceaccount.com",
+  "client_id": "100257312376041890834",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/epicodus%40steel-aileron-125215.iam.gserviceaccount.com"
+}
