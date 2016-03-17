@@ -2,8 +2,19 @@
 var infowindow;
 var markers =[];
 var pyrmont;
+var results;
+var cardArray = [];
 
-exports.initMap = function () {
+
+
+var  infoCard = function(result){
+  this.name = result.name;
+  this.address = result.vicinity;
+  this.rating = result.rating;
+  this.priceLevel = result.price_level;
+};
+
+exports.initMap = function(){
   //get current location
   navigator.geolocation.getCurrentPosition(function(location){
     pyrmont = {lat: location.coords.latitude, lng: location.coords.longitude};
@@ -22,7 +33,7 @@ exports.initMap = function () {
 };
 
 //create new google.maps.places.PlacesService
-exports.service = function (selectType, selectKeyword) {
+exports.service = function(selectType, selectKeyword) {
   var newService = new google.maps.places.PlacesService(map);
   newService.nearbySearch({
     location: pyrmont,
@@ -34,18 +45,20 @@ exports.service = function (selectType, selectKeyword) {
 };
 
 //returns markers and InfoWindow
-var callback = function (results, status) {
+var callback = function(results, status){
   if (status === google.maps.places.PlacesServiceStatus.OK) {
     deleteMarkers();
     for (var i = 0; i < results.length; i++) {
       var marker = createMarker(results[i]);
       markers.push(marker);
+      var newInfoCard = new infoCard(results[i]);
+      cardArray.push(newInfoCard);
     }
   }
   console.log(results);
 };
 
-var createMarker = function (place) {
+var createMarker = function(place){
   var placeLoc = place.geometry.location;
   //creates a Marker
   var marker = new google.maps.Marker({
@@ -59,6 +72,21 @@ var createMarker = function (place) {
     infowindow.open(map, this);
   });
   return marker;
+};
+
+
+exports.buildInfoCards = function(){
+  var infoCardString = '<div class="cardArray">';
+  for (var i = 0; i < cardArray.length; i++) {
+    infoCardString += '<div class="card">' +
+    '<h3>' + cardArray[i].name + '</h3><br>' +
+    '<p>' + cardArray[i].address + '</p><br>' +
+    '<p>' + cardArray[i].rating + '</p><br>' +
+    '<p>' + cardArray[i].priceLevel + '</p><br></div>';
+  }
+
+  infoCardString += '</div>';
+  return infoCardString;
 };
 
 //deletes markers

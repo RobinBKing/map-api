@@ -22,7 +22,10 @@ button {
   position: static;
   min-width: 200px;
 }
-//
-// .mapColumn {
-//   margin-left: 200px;
-// }
+
+.sidebarInformation {
+  overflow: hidden;
+  .card p, .card h3 {
+    color: white;
+  }
+}

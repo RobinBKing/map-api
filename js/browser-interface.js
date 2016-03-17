@@ -1,5 +1,6 @@
 var initMap = require('./../js/map.js').initMap;
 var service = require('./../js/map.js').service;
+var buildInfoCards = require('./../js/map.js').buildInfoCards;
 
 $( document ).ready(function() {
   //create a map
@@ -32,6 +33,8 @@ $( document ).ready(function() {
 
       //create new google.maps.places.PlacesService
       service(selectType, selectKeyword);
-    }
+      console.log(buildInfoCards()); 
+      $("#sidebarInformation").append(buildInfoCards());
+      }
   });
 });
