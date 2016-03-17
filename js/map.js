@@ -1,7 +1,7 @@
 var map;
 var infowindow;
 
-exports.initMap = function () {
+exports.initMap = function (selectType, selectKeyword) {
   navigator.geolocation.getCurrentPosition(function(location){
     var pyrmont = {lat: location.coords.latitude, lng: location.coords.longitude};
 
@@ -15,8 +15,10 @@ exports.initMap = function () {
     service.nearbySearch({
       location: pyrmont,
       radius: 500,
-      type: ['cafe'],
-      keyword: ['coffee']
+      // type: ['cafe'],
+      // keyword: ['coffee']
+      type: [selectType],
+      keyword: [selectKeyword]
     }, callback);
   });
 };

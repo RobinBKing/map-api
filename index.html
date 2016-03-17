@@ -12,7 +12,32 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtiJ713jUWoxp9UQWe1C1o5sTTxeO-jdc&libraries=places" async defer></script>
   </head>
   <body>
-    <button id="locateUser">Get Location</button>
-    <div id="map"></div>
+    <div class="container-fluid">
+  <div class="jumbotron">
+    <h1>Stuff Near You</h1>
+  </div>
+  <div class="row">
+    <div class="col-sm-3">
+      <form class="information" action="index.html" method="post">
+        <select class="form-control catagory">
+           <option></option>
+           <option>Coffee</option>
+           <option>Restaurants</option>
+           <option>Parking</option>
+           <option>Fitness Centers</option>
+         </select>
+         <button type="submit" class="btn btn-success" id="locateUser">Get Location</button>
+      </form>
+    </div>
+
+    <div class="col-sm-9">
+      <div id="map"></div>
+
+    </div>
+  </div>
+
+
+
+    </div>
   </body>
 </html>
