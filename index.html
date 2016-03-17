@@ -4,6 +4,7 @@
     <title>Simple Map</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="build/css/vendor.css">
     <link rel="stylesheet" href="build/css/styles.css">
     <script src="build/js/vendor.min.js"></script>
@@ -18,21 +19,29 @@
   </div>
   <div class="row">
     <div class="col-sm-3">
-      <form class="information" action="index.html" method="post">
-        <select class="form-control catagory">
-           <option></option>
-           <option>Coffee</option>
-           <option>Restaurants</option>
-           <option>Parking</option>
-           <option>Fitness Centers</option>
-         </select>
-         <button type="submit" class="btn btn-success" id="locateUser">Get Location</button>
-      </form>
+      <div class="infoColumn">
+        <form class="information" action="index.html" method="post">
+          <select class="form-control catagory">
+            <option></option>
+            <option>Coffee</option>
+            <option>Restaurants</option>
+            <option>Parking</option>
+            <option>Fitness Centers</option>
+          </select>
+          <button type="submit" class="btn btn-success" id="locateUser">Get Location</button>
+        </form>
+        <ul class="sidebar-information">
+          
+        </ul>
+      </div>
     </div>
-
     <div class="col-sm-9">
-      <div id="map"></div>
+      <!-- <div class="">
 
+      </div> -->
+      <div class="mapColumn">
+        <div id="map"></div>
+      </div>
     </div>
   </div>
 
